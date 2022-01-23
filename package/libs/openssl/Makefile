@@ -27,7 +27,7 @@ PKG_SOURCE_URL:= \
 	https://ftp.fi.muni.cz/pub/openssl/source/old/$(PKG_BASE)/ \
 	ftp://ftp.pca.dfn.de/pub/tools/net/openssl/source/ \
 	ftp://ftp.pca.dfn.de/pub/tools/net/openssl/source/old/$(PKG_BASE)/
-PKG_HASH:=0b7a3e5e59c34827fe0c3a74b7ec8baef302b98fa80088d7f9153aa16fa76bd1
+PKG_HASH:=ce07195b659e75f4e1db43552860070061f156a98bb37b672b101ba6e3ddf30c
 
 PKG_LICENSE:=OpenSSL
 PKG_LICENSE_FILES:=LICENSE
@@ -99,7 +99,7 @@ $(call Package/openssl/Default)
 	   +OPENSSL_ENGINE_BUILTIN_DEVCRYPTO:kmod-cryptodev \
 	   +OPENSSL_ENGINE_BUILTIN_PADLOCK:kmod-crypto-hw-padlock
   TITLE+= (libraries)
-  ABI_VERSION:=1.1
+  ABI_VERSION:=1.0
   MENU:=1
 endef
 
